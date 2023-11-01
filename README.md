@@ -20,27 +20,28 @@ The dataset is sourced from the "Assignment-1_Data.xlsx" file. It includes the f
 - Country
 
 ## Data Preprocessing
-1. The dataset was read from the Excel file with special handling for missing values marked as "?", "??", "???", "#", "##", "###", and "####".
-2. Basic data trimming was applied to remove entries with missing or zero values in specific columns.
-3. Outliers in the 'Quantity' and 'Price' columns were identified and capped.
-4. Missing 'CustomerID' values were filled with dummy IDs.
-5. Data types were converted for specific columns, and new columns were created based on date and time attributes.
-6. A 'CountryID' column was created by categorizing countries.
-7. The range of 'CustomerID' values was adjusted.
+1. The Excel file containing the dataset was read, with special attention paid to any missing values indicated by the symbols "?", "??", "???", "#", "##", "###", and "####".
+2. Simple data trimming was used to exclude items from particular columns that had zero or missing values.
+3. 'Quantity' and 'Price' columns had outliers that were detected and capped.
+4. Dummy IDs were used to fill in the missing 'CustomerID' entries.
+5. In order to generate new columns based on date and time properties, certain columns' data types have to be modified.
+6. The countries were categorized to produce a column called 'CountryID'.
+7. A modification was made to the CustomerID's value range.
 
 ## Association Rule Mining
-1. The item names from the transactions were extracted and one-hot encoded.
-2. Frequent itemsets were mined using the Apriori algorithm.
-3. Association rules were derived based on confidence and support thresholds.
+1. One-hot encoding was performed after extracting the item names from the transactions.
+2. Using the Apriori technique, frequent itemsets were extracted.
+3. Confidence and support thresholds were used to develop association rules.
 
 ## Visualization
-1. The analysis was visualized using various plots.
-2. A scatter plot showed the relationship between support, confidence, and lift.
-3. Interactive visualizations were created with Plotly, including scatter plots and a sunburst chart for association rules.
+1. A variety of graphs were used to visualize the analysis.
+2. The relation between lift, confidence, and support was displayed using a scatter plot.
+3. Using Plotly, interactive visualizations for association rules were produced, which included scatter plots and a sunburst chart.
 
 ## Usage
-- To reproduce this analysis, ensure that you have the required libraries installed.
-- Run the provided code in your preferred Python environment.
+- Make sure you have the necessary libraries installed in order to replicate this analysis.
+- Use the Python environment of your choice to run the provided code.
+
 
 ## Files
 - `Assignment-1_Data.xlsx`: The dataset.
